@@ -1,19 +1,17 @@
 
-.tiltheader h1{
-
-font-family: Helvectice Neue, sans-serif;
-font-size: 200px;
-font-weight: bold;
-color: black;
-text-align: center
-
-}
-
-nav{
+ul{
 	font-family: Helvetica Neue, sans-serif;
 	font-size: 40px;
 	font-weight: lighter;
+	float: right;
+	position: relative;
+	right: 40px ;
+	}
 
+
+	li{
+display: inline;
+padding: 8px;
 	}
 
 
@@ -23,6 +21,9 @@ h1{
 	font-size: 90px;
 	font-weight: lighter;
 	color: white;
+	margin-left: 40px;
+	margin-top: 120px;
+	letter-spacing: 14px
 
 	}
 
@@ -31,7 +32,20 @@ h1{
 	font-size: 60px;
 	font-weight: lighter;
 	color: white;
+	margin-left: 40px;
+	margin-top: 20px;
+	letter-spacing: 10px;
 
+	}
+
+
+	h3{
+
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 40px;
+	font-weight: lighter;
+	color: white;
+	letter-spacing: 8px
 
 	}
 
@@ -51,11 +65,31 @@ header {margin-bottom: 20px;}
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
 
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
 .backgroundimage{
 
-background-image: cover;
 opacity: 50%;
+height: 100%; 
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 
+}
+
+
+
+.logo{
+
+	max-width: 250px;
+	max-height: 250px;
+	padding-top: 40px;
+	padding-left: 40px;
 }
 
 
@@ -79,6 +113,126 @@ a:hover { color: lightgrey; }
 }
 
 
+.grid-container-menupage{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	grid-gap: 10px;
+	padding: 10px
+
+}
+
+.menuphoto, div{
+
+}
+
+
+.menupic{
+
+margin-top: 50px;
+margin-bottom: 40px;
+max-height: 800px;
+max-width: 800px;
+
+}
+
+.madandypic{
+margin-top: 40px;
+margin-bottom: 40px;
+max-height: 600px;
+max-width: 600px;
+
+
+}
+
+
+.baconcheeseburgerpic{
+margin-top: 40px;
+margin-bottom: 40px;
+max-height: 600px;
+max-width: 600px;
+
+}
+
+
+
+.aboutpage, p {
+
+margin-top: 40px;
+margin-bottom: 30px;
+margin-left: 40px;
+
+}
+
+.aboutphoto1{
+
+margin-top: 20px;
+margin-bottom: 20px;
+max-height: 900px;
+max-width: 900px;
+
+}
+
+.aboutphoto2{
+
+margin-top: 20px;
+margin-bottom: 20px;
+max-height: 900px;
+max-width: 900px;
+
+}
+
+.aboutphoto3{
+
+margin-top: 20px;
+margin-bottom: 20px;
+max-height: 900px;
+max-width: 900px;
+}
+
+.aboutphoto4{
+margin-top: 20px;
+margin-bottom: 20px;
+max-height: 900px;
+max-width: 900px;
+
+}
+
+
+
+.grid-container-hoursandlocations{
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+
+}
+
+
+
+.pearlphoto{
+
+max-height: 1000px;
+max-width: 1000px;
+
+
+}
+
+.swanislandphoto{
+max-height: 1000px;
+max-width: 1000px;
+
+}
+
+.burnsidephoto{
+max-height: 1000px;
+max-width: 1000px;
+
+}
+
+
+
+
+
 footer{
 
  color: white;
@@ -88,13 +242,6 @@ footer{
  font-weight: bold;
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -121,7 +268,10 @@ footer{
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 40px;
 	width: 60%;
-}
+
+	}
+
+
 }
 
 
@@ -136,17 +286,4 @@ footer{
 	grid-gap: 40px;
 	width: 60%;
 }
-
-
-}
-
-
-
-
-
-
-
-
-
-
 
