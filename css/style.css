@@ -59,8 +59,55 @@ text-align: left
 
 }
 
+.tiltheader {
 
-header {margin-bottom: 20px;}
+font-size: 300px;
+color: black;
+font-weight: bold}
+
+.locationheader{
+color: black;
+font-size: 100px;
+font-weight: ;
+
+}
+
+.enter header {
+
+	margin-bottom: 20px;
+	background-image: url('../images/mobileburger.jpg');
+	background-size: cover;
+	height: 100vh;
+	background-position: center center;}
+
+.enter header div {
+	margin: auto;
+	width: 60%;
+	text-align: center;
+padding-top: 500px;}
+
+body.enter{
+
+background-color: white;
+
+}
+
+.enter-button {
+	display: inline-block;
+	font-family: Helvetica Neue, sans-serif;
+	font-size: 40px;
+	font-weight: lighter;
+	color: black;
+	letter-spacing: 8px;
+	padding-top: 500px;
+	margin-top: 600px;
+	border: 2px solid black;
+  background-color: none
+  color: black;
+  padding: 14px 28px;
+  cursor: pointer;
+  border-radius: 10px;
+}
 
 /* ensures that your images stretch the width of their containers */
 img { width: 100%; }
@@ -69,19 +116,6 @@ body, html {
   height: 100%;
   margin: 0;
 }
-
-
-.backgroundimage{
-
-opacity: 50%;
-height: 100%; 
-width: 100%;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-
-}
-
 
 
 .logo{
@@ -115,13 +149,14 @@ a:hover { color: lightgrey; }
 
 .grid-container-menupage{
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
 	padding: 10px
 
 }
 
 .menuphoto, div{
+padding-left: 30px;
 
 }
 
@@ -137,17 +172,14 @@ max-width: 800px;
 
 .madandypic{
 margin-top: 40px;
-margin-bottom: 40px;
 max-height: 600px;
 max-width: 600px;
-
 
 }
 
 
 .baconcheeseburgerpic{
 margin-top: 40px;
-margin-bottom: 40px;
 max-height: 600px;
 max-width: 600px;
 
@@ -198,34 +230,44 @@ max-width: 900px;
 }
 
 
-
 .grid-container-hoursandlocations{
 
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 2fr;
 	padding: 10px;
 
 }
 
+.pearldistrict{
+padding-top: 60px;
+
+}
 
 
-.pearlphoto{
+.pearldistrict{
 
 max-height: 1000px;
 max-width: 1000px;
+padding-bottom: 40px;
+
 
 
 }
 
-.swanislandphoto{
+.swanislandphoto2{
 max-height: 1000px;
 max-width: 1000px;
+padding-bottom: 40px;
+padding-left: 40px;
+
 
 }
 
-.burnsidephoto{
+.burnsidephoto2{
 max-height: 1000px;
 max-width: 1000px;
+padding-bottom: 40px;
+padding-left: 40px;
 
 }
 
@@ -256,7 +298,25 @@ footer{
 		grid-gap: 40px;
 		width: 70%;
 		margin: auto;
-}
+    	}
+
+    	.grid-container-menupage{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 10px;
+		padding-left: 60px;}
+
+		.enter header {
+
+		margin-bottom: 20px;
+		background-image: url('../images/o.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		height: 100vh;
+		opacity: 50%;
+	}
+
+	
 }
 
 @media only screen and (min-width: 1024px) {
@@ -268,9 +328,29 @@ footer{
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 40px;
 	width: 60%;
-
 	}
 
+	.grid-container-hoursandlocations{
+
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	padding: 10px;}
+
+	.pearlphoto2{
+		padding-top: 100px;}
+
+	.swanislandphoto2{
+	padding-top: 30px;}
+
+	.burnsidephoto2{
+		
+	}
+
+	  	.grid-container-menupage{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 10px;
+		padding: 10px}
 
 }
 
@@ -285,5 +365,15 @@ footer{
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap: 40px;
 	width: 60%;
+}
+
+.grid-container-hoursandlocations{
+
+	display: grid;
+	grid-template-columns: 4fr 4fr;
+	padding: 10px;
+
+
+}
 }
 
