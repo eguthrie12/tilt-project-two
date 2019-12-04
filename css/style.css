@@ -6,6 +6,7 @@ ul{
 	float: right;
 	position: relative;
 	right: 40px;
+	color: white;
 	}
 
 
@@ -57,7 +58,7 @@ p{
 	font-family: Helvectice Neue, sans-serif;
 	font-size: 30px;
 	color: white;
-	text-align: left
+	text-align: left;
 
 }
 
@@ -85,7 +86,12 @@ p{
 	margin: auto;
 	width: 60%;
 	text-align: center;
-	padding-top: 40vh;}
+	padding-top: 20vh;
+}
+.enter header div.text {
+	padding-top: 38px;
+	margin-top: -46px;
+}
 
 body.enter{
 
@@ -113,9 +119,7 @@ body.enter{
 
 
 html, body {
-  background: #333;
-  height: 100%;
-  overflow: hidden;
+  background: solid black;
   text-align: center;
 }
 
@@ -178,7 +182,7 @@ html, body {
 
 body {
   font-family: sans-serif;
-  background-color: #F6C390;
+  background-color: solid black;
 }
 
 a {
@@ -201,7 +205,6 @@ a {
 @import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
 body,
 html {
-  height: 100%;
   padding: 0;
   margin: 0;
   font-family: 'Arimo', sans-serif;
@@ -483,7 +486,6 @@ nav {
 img { width: 100%; }
 
 body, html {
-  height: 100%;
   margin: 0;
 }
 
