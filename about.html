@@ -16,7 +16,6 @@
 <p><a href="index.html"><img class="logo" src= "images/logo.png"></a></p>	</header>
 	<nav>
 		<ul>
-			<li><a href="home.html">Home</a></li>
 			<li><a href="menu.html">Menu</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="hoursandlocations.html">Hours & Locations</a></li>
@@ -31,21 +30,32 @@
 </p>
 
 
-<img class=aboutphoto1 src="images/o-11.jpg">
+<h2 class="homepageslideshow"></h2>
 
-<img class=aboutphoto2 src="images/o-9.jpg">
+<div class="w3-content w3-section" style="max-width:1000px">
+  <img class="mySlides" src="images/o-4-2.jpg" style="width:100%">
+  <img class="mySlides" src="images/o-2-2.jpg" style="width:100%">
+  <img class="mySlides" src="images/o-1-2.jpg" style="width:100%">
+  <img class="mySlides" src="images/o-3-2.jpg" style="width:100%">
+  <img class="mySlides" src="images/o-9-2.jpg" style="width:100%">
+</div>
 
-<img class=aboutphoto3 src="images/o-10.jpg">
+<script>
+var myIndex = 0;
+carousel();
 
-<img class=aboutphoto4 src="images/o-12.jpg">
-
-
-
-
-
-
-
-
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 
 
 	<main>
