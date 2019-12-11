@@ -18,21 +18,21 @@ ul{
 
 h1{
 	font-family: Helvetica Neue, sans-serif;
-	font-size: 90px;
-	font-weight: lighter;
-	color: white;
+	font-size: 300px;
+	font-weight: bold;
+	color: black;
 	margin-left: 40px;
 	margin-top: 120px;
-	letter-spacing: 14px
+	letter-spacing: 14px;
 	}
 
 	h2{
 	font-family: Helvetica Neue, sans-serif;
-	font-size: 60px;
+	font-size: 80px;
 	font-weight: lighter;
 	color: white;
-	margin-left: 40px;
-	margin-top: 20px;
+	margin-left: 100px;
+	margin-top: 150px;
 	letter-spacing: 10px;
 	}
 
@@ -43,7 +43,7 @@ h1{
 	font-size: 40px;
 	font-weight: lighter;
 	color: white;
-	letter-spacing: 8px
+	letter-spacing: 8px;
 
 	}
 
@@ -58,9 +58,16 @@ p{
 	font-size: 30px;
 	color: white;
 	text-align: left;
+	animation: pulse 5s;}
 
+
+	@keyframes pulse{
+	0%{
+		color: black;}
+		100%{
+color:white;}
 }
-
+	}
 .tiltheader {
 
 	font-size: 300px;
@@ -88,8 +95,8 @@ p{
 	padding-top: 20vh;
 }
 .enter header div.text {
-	padding-top: 43px;
-	margin-top: -46px;
+	padding-top: 30px;
+	margin-top: -40px;
 }
 
 body.enter{
@@ -147,7 +154,7 @@ html, body {
   letter-spacing: 8px;
   line-height: 32px;
   position: relative;
-  top: -48px;
+  top: -40px;
 }
 
 @keyframes draw {
@@ -163,7 +170,7 @@ html, body {
   }
 }
 
-.svg-wrapper: hover .shape {
+.svg-wrapper:hover .shape {
   -webkit-animation: 0.5s draw linear forwards;
   animation: 0.5s draw linear forwards;
 }
@@ -261,20 +268,42 @@ a:hover { color: lightgrey; }
 }
 
 .madandypic{
+	animation: 2s slide;
 	margin-top: 40px;
 	max-height: 600px;
-	max-width: 600px;
-
-}
+	max-width: 600px;}
 
 
 .baconcheeseburgerpic{
+	animation: 2s rightslide;
 	margin-top: 40px;
 	max-height: 600px;
 	max-width: 600px;
 
 }
 
+
+@keyframes slide{
+from {
+margin-left: 75%;
+width: 100%;}
+
+to {
+margin-left:0%;
+width: 100%;}
+
+}
+
+@keyframes rightslide{
+from {
+margin-left: -75%;
+width: 100%;}
+
+to {
+margin-left:0%;
+width: 100%;}
+
+}
 
 
 .aboutpage, p{
@@ -416,7 +445,7 @@ footer{
 
 		.hl {
 			display:grid;
-			grid-template-columns: 1fr 1fr}
+			grid-template-columns: 1fr}
 		}
 
 		.locationheader{
@@ -553,22 +582,16 @@ footer{
 	padding-bottom: 1000px;}
 
 	.burnsidephoto{
-	margin-top: 500px;
-
-	}
+	margin-top: 500px;}
 
 	.aboutpage p {
 	padding-left: 1000px;
 	margin-right: 1000px;
-	margin-top: 500px;
-
-	}
+	margin-top: 500px;}
 
 	.abouttilt{
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-
-	}
+	grid-template-columns: 1fr 1fr;}
 
 	.aboutpage {
 	display: grid;
@@ -580,30 +603,29 @@ footer{
 
 
 	.aboutheader{
-	padding-bottom: 100px;
-
-	}
+	padding-bottom: 100px;}
 
 
-.map{
+	.map{padding-left: 100px}
 
-padding-left: 100px
+	.hoursandlocations{padding-bottom: 50px;}
+
+
+	.hl {
+	display:grid;
+	grid-template-columns: 1fr 1fr}
+
+.grid-container-menupage{
+
+	display:grid;
+	grid-template-columns: 4fr 2fr 2fr;
+}
+
+.menupic{
+	width: 50vw;
 
 
 }
-
-.hoursandlocations{
-	padding-bottom: 50px;
-}
-
-.pearldistrict{
-;
-}
-
-
-
-
-
 
 
 
