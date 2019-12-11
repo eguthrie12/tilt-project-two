@@ -493,19 +493,24 @@ footer{
 		}
 
 
-	.map{
-	padding-top: 50px;
+		.map{
+		padding-top: 50px;
 
-	}
+		}
+
+		.madandytext{
+		padding-left: 120px;
+		}
 
 
+		.baconburgertext{
+		padding-left: 120px;
+		}
 
+		.featureditemstext{
+		padding-left: 120px;
 
-
-
-
-		
-
+		}
 		
 
 	
@@ -615,17 +620,38 @@ footer{
 	display:grid;
 	grid-template-columns: 1fr 1fr}
 
-.grid-container-menupage{
+	.grid-container-menupage{
 
 	display:grid;
 	grid-template-columns: 4fr 2fr 2fr;
-}
+	}
 
-.menupic{
+	.mnenuphoto{
+		grid-column: 2/6;
+		size: 1200px;
+		
+	}
+
+	.menupic{
 	width: 50vw;
 
+	}
 
-}
+
+	.madandytext{
+	padding-right: 80px;
+
+	}
+
+	.baconburgertext{
+	padding-right: 80px;
+
+	}
+
+	.menuheader{
+	padding-bottom: 100px;
+
+	}
 
 
 
